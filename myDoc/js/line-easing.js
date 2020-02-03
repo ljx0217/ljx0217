@@ -100,13 +100,13 @@ option = {
 
 myChart.setOption(option);
 
-var map = myChart.getModel().getComponent('bmap').getBMap();
-map.setMapStyleV2({
+var bmap = myChart.getModel().getComponent('bmap').getBMap();
+bmap.setMapStyleV2({
 	// styleId: '857f17e4b6d087d0e1e122666d706b6f'
 	styleId: '952a710ef90dbe24cb87afce9c8c2fcc'
 })
 
-var longitude, latitude;
+var longitude=0, latitude=0;
 navigator.geolocation.getCurrentPosition(function(position) {
 	longitude = position.coords.longitude;
 	latitude = position.coords.latitude;
