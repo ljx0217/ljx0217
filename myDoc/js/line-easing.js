@@ -2,7 +2,7 @@ var dom = document.getElementById("container");
 var myChart = echarts.init(dom);
 var app = {};
 option = null;
-console.log(1);
+console.log(2);
 
 //var req = new XMLHttpRequest();
 //if(req != null) {
