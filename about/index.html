@@ -3,15 +3,19 @@
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="utf-8">
   
-  <title>归档: 2019/7 | 海砚学堂</title>
+  <title>海砚学堂</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="--- layout: false ---                               EChartsDemo01-柱状图-">
+<meta property="og:type" content="website">
 <meta property="og:title" content="海砚学堂">
-<meta property="og:url" content="https://github.com/archives/2019/07/index.html">
+<meta property="og:url" content="https://github.com/about/index.html">
 <meta property="og:site_name" content="海砚学堂">
+<meta property="og:description" content="--- layout: false ---                               EChartsDemo01-柱状图-">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2020-02-03T06:28:56.176Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="海砚学堂">
+<meta name="twitter:description" content="--- layout: false ---                               EChartsDemo01-柱状图-">
   
     <link rel="alternate" href="/atom.xml" title="海砚学堂" type="application/atom+xml">
   
@@ -68,59 +72,151 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-         <span class="archive-year-post">6 post  this year</span>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2019/07/24/ChinaVis2019成都站参会感悟-1/" class="archive-article-date">
-  <time datetime="2019-07-24T04:44:32.000Z" itemprop="datePublished">07-24</time>
+        <section id="main"><article id="page-" class="article article-type-page" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/about/index.html" class="article-date">
+  <time datetime="2020-02-03T06:28:56.176Z" itemprop="datePublished">2020-02-03</time>
 </a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/07/24/ChinaVis2019成都站参会感悟-1/">ChinaVis2019成都站参会感悟</a>
-    </h1>
-  
-
-    </header>
+    
   </div>
-</article>
-  
+  <div class="article-inner">
     
     
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2019/07/20/浙大暑期学校2019/" class="archive-article-date">
-  <time datetime="2019-07-20T05:55:34.000Z" itemprop="datePublished">07-20</time>
-</a>
+    <div class="article-entry" itemprop="articleBody">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/07/20/浙大暑期学校2019/">浙大2019年可视化与可视分析暑期学校</a>
-    </h1>
-  
-
-    </header>
+        <!-- Table of Contents -->
+        
+        ---
+layout: false
+--- 
+    <!DOCTYPE>  
+    <html>  
+     <head><meta name="generator" content="Hexo 3.9.0">  
+      <title> EChartsDemo01-柱状图- </title>  
+      
+        <meta charset="utf-8">  
+        <!-- 【01】引入 ECharts 文件 -->  
+         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>  
+          
+     </head>  
+          
+        <!-- 【02】为 ECharts 准备一个具备大小（宽高）的 DOM 容器 -->  
+        <div id="main" style="height:100%;"></div>  
+           
+        <script type="text/javascript">  
+        	
+            // 【03】基于准备好的dom，初始化echarts实例  
+            var dom = document.getElementById("main")
+            var myChart = echarts.init(dom);  
+      
+            // 【04】指定图表的配置项和数据  
+            var option = {  
+                title: {  
+                    text: 'ECharts 入门示例'  
+                },  
+                toolbox:{
+                	show:true,
+                    feature:{
+                	  saveAsImage:{
+                		 show:true,
+                	    },
+                    }
+                },
+                tooltip: {},  
+                //图例
+                legend: {  
+                    data:['销量']
+                }, 
+                //x轴
+                xAxis: {  
+                    data: ["衬衫","羊毛衫","雪纺衫","裤子","高跟鞋","袜子"]  
+                },  
+                //y轴
+                yAxis: {}, 
+                //数据
+                series: [{
+                    name: '销量',  
+                    type: 'bar',  //直方图
+                    data: [5, 20, 36, 10, 10, 20]  
+                }]  
+            };  
+      
+            // 【05】使用刚指定的配置项和数据显示图表。  
+            myChart.setOption(option);  
+            
+        </script>  
+     <body>  
+        
+     </body>  
+    </html>  
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://github.com/about/index.html" data-id="ck662nmmp0000c0un37kp2uo4" class="article-share-link">分享</a>
+      
+      
+      
+    </footer>
   </div>
+  
+    
+ <script src="/jquery/jquery.min.js"></script>
+  <div id="random_posts">
+    <h2>推荐文章</h2>
+    <div class="random_posts_ul">
+      <script>
+          var random_count =4
+          var site = {BASE_URI:'/'};
+          function load_random_posts(obj) {
+              var arr=site.posts;
+              if (!obj) return;
+              // var count = $(obj).attr('data-count') || 6;
+              for (var i, tmp, n = arr.length; n; i = Math.floor(Math.random() * n), tmp = arr[--n], arr[n] = arr[i], arr[i] = tmp);
+              arr = arr.slice(0, random_count);
+              var html = '<ul>';
+            
+              for(var j=0;j<arr.length;j++){
+                var item=arr[j];
+                html += '<li><strong>' + 
+                item.date + ':&nbsp;&nbsp;<a href="' + (site.BASE_URI+item.uri) + '">' + 
+                (item.title || item.uri) + '</a></strong>';
+                if(item.excerpt){
+                  html +='<div class="post-excerpt">'+item.excerpt+'</div>';
+                }
+                html +='</li>';
+                
+              }
+              $(obj).html(html + '</ul>');
+          }
+          $('.random_posts_ul').each(function () {
+              var c = this;
+              if (!site.posts || !site.posts.length){
+                  $.getJSON(site.BASE_URI + 'js/posts.js',function(json){site.posts = json;load_random_posts(c)});
+              } 
+               else{
+                load_random_posts(c);
+              }
+          });
+      </script>
+    </div>
+  </div>
+
+    
+  
 </article>
-  
-  
-    </div></section>
+ 
+     
+  <div class="comments" id="comments">
+    
+     
+       
+      <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
+    
+       
+      
+      
+  </div>
+ 
   
 
 </section>
@@ -164,13 +260,6 @@
 
   
     
-  <div class="widget-wrap">
-    <h3 class="widget-title archive">归档</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">十月 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">八月 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">七月 2019</a><span class="archive-list-count">2</span></li></ul>
-    </div>
-  </div>
-
 
   
 </aside>
