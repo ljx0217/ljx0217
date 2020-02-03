@@ -1,19 +1,19 @@
-var dom = document.getElementById("container");
-var myChart = echarts.init(dom);
-var app = {};
-option = null;
-console.log(111);
-$.ajax({
-        crossOrigin: true,
-        type: 'GET',
-        url: 'http://m.zz.bendibao.com/news/66758.shtm',
-        success: function (body, heads, status) {
-            alert(body);  //body就是内容了，也就是url网页中的内容
-        },
-        error: function () {
-            alert("ERROR!")
-        }
-    });
+//var dom = document.getElementById("container");
+//var myChart = echarts.init(dom);
+//var app = {};
+//option = null;
+console.log(3);
+//$.ajax({
+//      crossOrigin: true,
+//      type: 'GET',
+//      url: 'http://m.zz.bendibao.com/news/66758.shtm',
+//      success: function (body, heads, status) {
+//          alert(body);  //body就是内容了，也就是url网页中的内容
+//      },
+//      error: function () {
+//          alert("ERROR!")
+//      }
+//  });
 
 //var req = new XMLHttpRequest();
 //if(req != null) {
@@ -29,97 +29,107 @@ $.ajax({
 //	req.open("GET", "http://m.zz.bendibao.com/news/66758.shtm", true); //url是获取的地址  
 //	req.send(null);
 //};
+////	
+//option = {
+//	title: {
+//		text: '',
+//		textStyle: {
+//			color: '#ff9300',
+//			fontSize: '22'
+//		},
+//		//		subtext: dateselected.year + '-' + dateselected.month + '-' + dateselected.day + '- ' + pointdata_time + '时',
+//		subtextStyle: {
+//			color: '#ff9300',
+//			fontSize: '18'
+//		}
+//		// x: 'center',
+//		// align: 'right'
+//	},
+//	// brush: {
+//	//   toolbox: ['rect', 'polygon', 'lineX', 'lineY', 'keep', 'clear']
+//	//   // xAxisIndex: 'all'
+//	// },
+//	// toolbox: {
+//	//   feature: {
+//	//     magicType: {
+//	//       type: ['stack', 'tiled']
+//	//     },
+//	//     dataView: {}
+//	//   }
+//	// },
+//	//	legend: {
+//	//		data: ['departure', 'arrive'],
+//	//		show: true,
+//	//		right: 20,
+//	//		textStyle: {
+//	//			color: '#ff9300'
+//	//		}
+//	//	},
+//	tooltip: {
+//		show: false
+//	},
+//	animation: false,
+//	bmap: {
+//		center: [110.35, 19.99999],
+//		zoom: 13,
+//		roam: true,
+//		itemStyle: {
+//			normal: {
+//				areaColor: '#323c48',
+//				borderColor: '#404a59'
+//			},
+//			emphasis: {
+//				areaColor: '#2a333d'
+//			}
+//		}
+//	},
+//	series: [{
+//		name: 'departure',
+//		type: 'scatter',
+//		coordinateSystem: 'bmap',
+//		data: [],
+//		symbolSize: function(val) {
+//			return val[2] / 1
+//		},
+//		label: {
+//			normal: {
+//				formatter: '{b}',
+//				position: 'right',
+//				show: false
+//			},
+//			emphasis: {
+//				show: true
+//			}
+//		},
+//		itemStyle: {
+//			normal: {
+//				color: '#ff9300'
+//			}
+//		}
+//	}]
+//};
 //
-option = {
-	title: {
-		text: '',
-		textStyle: {
-			color: '#ff9300',
-			fontSize: '22'
-		},
-		//		subtext: dateselected.year + '-' + dateselected.month + '-' + dateselected.day + '- ' + pointdata_time + '时',
-		subtextStyle: {
-			color: '#ff9300',
-			fontSize: '18'
-		}
-		// x: 'center',
-		// align: 'right'
-	},
-	// brush: {
-	//   toolbox: ['rect', 'polygon', 'lineX', 'lineY', 'keep', 'clear']
-	//   // xAxisIndex: 'all'
-	// },
-	// toolbox: {
-	//   feature: {
-	//     magicType: {
-	//       type: ['stack', 'tiled']
-	//     },
-	//     dataView: {}
-	//   }
-	// },
-	//	legend: {
-	//		data: ['departure', 'arrive'],
-	//		show: true,
-	//		right: 20,
-	//		textStyle: {
-	//			color: '#ff9300'
-	//		}
-	//	},
-	tooltip: {
-		show: false
-	},
-	animation: false,
-	bmap: {
-		center: [110.35, 19.99999],
-		zoom: 13,
-		roam: true,
-		itemStyle: {
-			normal: {
-				areaColor: '#323c48',
-				borderColor: '#404a59'
-			},
-			emphasis: {
-				areaColor: '#2a333d'
-			}
-		}
-	},
-	series: [{
-		name: 'departure',
-		type: 'scatter',
-		coordinateSystem: 'bmap',
-		data: [],
-		symbolSize: function(val) {
-			return val[2] / 1
-		},
-		label: {
-			normal: {
-				formatter: '{b}',
-				position: 'right',
-				show: false
-			},
-			emphasis: {
-				show: true
-			}
-		},
-		itemStyle: {
-			normal: {
-				color: '#ff9300'
-			}
-		}
-	}]
-};
+//myChart.setOption(option);
+//
+//var bmap = myChart.getModel().getComponent('bmap').getBMap();
+//bmap.setMapStyleV2({
+//	// styleId: '857f17e4b6d087d0e1e122666d706b6f'
+//	styleId: '952a710ef90dbe24cb87afce9c8c2fcc'
+//})
 
-myChart.setOption(option);
+ var map = new BMap.Map("container");
+    var point = new BMap.Point(116.331398,39.897445);
+    map.centerAndZoom(point,12);
 
-var bmap = myChart.getModel().getComponent('bmap').getBMap();
-bmap.setMapStyleV2({
-	// styleId: '857f17e4b6d087d0e1e122666d706b6f'
-	styleId: '952a710ef90dbe24cb87afce9c8c2fcc'
-})
-
-var longitude=0, latitude=0;
-navigator.geolocation.getCurrentPosition(function(position) {
-	longitude = position.coords.longitude;
-	latitude = position.coords.latitude;
-});
-alert(longitude,latitude)
+    var geolocation = new BMap.Geolocation();
+    geolocation.getCurrentPosition(function(r){
+        if(this.getStatus() == BMAP_STATUS_SUCCESS){
+            var mk = new BMap.Marker(r.point);
+            map.addOverlay(mk);
+            map.panTo(r.point);
+            alert('您的位置：'+r.point.lng+','+r.point.lat);
+        }
+        else {
+            alert('failed'+this.getStatus());
+        }
+    },{enableHighAccuracy: true})
