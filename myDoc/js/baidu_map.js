@@ -84,7 +84,7 @@ for(var i = 0; i < data.length; i++) {
 	var position_n = data[i][1];
 	var information_n = data[i][2];
 	Get_Points(number_n, position_n, information_n);
-	console.log(point_select);
+//	console.log(point_select);
 	//标记病例地点
 
 }
