@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 
 <html lang="zh-CN">
+
 	<head>
 		<meta charset="utf-8" />
-	    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-	    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
 		<title>河南省新冠肺炎疫情可视分析系统</title>
 		<link rel="stylesheet" href="css/app.css" />
-		<script src="https://cdn.bootcss.com/echarts/4.2.1-rc1/echarts.min.js"></script>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts-gl/dist/echarts-gl.min.js"></script>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts-stat/dist/ecStat.min.js"></script>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/dist/extension/dataTool.min.js"></script>
 		<!--<script type="text/javascript" src="https://api.map.baidu.com/api?v=3.0&ak=uifoMQRIzmqknGyYYicbW5sG4akVVBIN"></script>-->
-		
+
 		<!--<script src="lib/echarts.js"></script>-->
 		<script src="lib/jquery-3.3.1.js"></script>
 		<script src="lib/china.js"></script>
@@ -17,7 +21,7 @@
 		<script src="lib/china-province/henan.js"></script>
 		<script type="text/javascript" src="lib/dataTool.js"></script>
 	</head>
-	
+
 	<body>
 		<div class="header">
 			<h1 class="header-title">河南省新冠肺炎疫情可视分析系统</h1>
@@ -25,65 +29,74 @@
 		<div class="wrapper">
 			<div class="content">
 				<div class="col col-l">
+					<div class="xpanel-wrapper xpanel-wrapper-6">
+						</div>
+					<!--<div class="xpanel-wrapper xpanel-wrapper-16">
+						<div id="chart1_0"  class="xpanel "></div>
+
+					</div>-->
 					<div class="xpanel-wrapper xpanel-wrapper-50">
-						<div id="chart11" class="xpanel xpanel-l-t">
-							<div class="title">11</div>
+						<div id="chart1_4" class="xpanel xpanel-ccc">
+							<div class="title title-long">22</div>
+
 						</div>
 					</div>
-					<div class="xpanel-wrapper xpanel-wrapper-50">
-						<div id="chart22" class="xpanel xpanel-l-b">
-							<div class="title">22</div>
+					<div class="xpanel-wrapper xpanel-wrapper-44">
+						<div id="chart1_3" class="xpanel xpanel-ccc">
+							<div class="title title-long">33</div>
 						</div>
 					</div>
 				</div>
 				<div class="col col-c">
-					<div class="xpanel-wrapper xpanel-wrapper-6">
-						<div  class="xpanel xpanel-c-b">
-							<div class="title title-long">
-								<button onclick="window.location.href = 'index.html'" style="background-color: Transparent; color: #FFFFFF; outline: none; background-repeat:no-repeat;border: 1;cursor:pointer;overflow: hidden;">河南省疫情总体分析</button>
-							  <button onclick="window.location.href = '河南省各市比较分析.html'" style="background-color: Transparent; color: #FFFFFF; outline: none; background-repeat:no-repeat;border: 1;cursor:pointer;overflow: hidden;">河南省疫情各市比较分析</button>
-							
-							</div>
+					<div class="xpanel-wrapper xpanel-wrapper-2"></div>
+					<div class="xpanel-wrapper xpanel-wrapper-78">
+						<div class="title title-long">
+							<button onclick="window.location.href = 'index.html'" style="width:32%;background-color: Transparent; color: #43bbff; outline: none; background-repeat:no-repeat;border: 3px ridge #43bbff;cursor:pointer;overflow: hidden;">河南省疫情趋势分析</button>
+							<button onclick="window.location.href = '来源分析.html'" style="width:32%;background-color: Transparent; color: #43bbff; outline: none; background-repeat:no-repeat;border: 3px ridge #43bbff;cursor:pointer;overflow: hidden;">河南省疫情来源分析</button>
+							<button onclick="window.location.href = '河南省各市比较分析.html'" style="width:32%;background-color: Transparent; color: #43bbff; outline: none; background-repeat:no-repeat;border: 3px ridge #43bbff;cursor:pointer;overflow: hidden;">河南省疫情各市比较分析</button>
+						</div>
+						<div id="chart1_1" class="xpanel ">
+
 						</div>
 					</div>
-					<div  class="xpanel-wrapper xpanel-wrapper-64">
-						<div id="chart1" class="xpanel no-bg" >
-							<div class="title title-long">77</div>
-							
-						</div>
-					</div>
-					<div class="xpanel-wrapper xpanel-wrapper-30">
-						<div id="chart66" class="xpanel xpanel-c-b">
-							<div class="title title-long">66</div>
-						</div>
-					</div>
+					<div class="xpanel-wrapper xpanel-wrapper-20">
+				        <div id="chart1_6" class="xpanel ">
+
+				        </div>
+			        </div>
+
+					
 				</div>
 				<div class="col col-r">
-					<div class="xpanel-wrapper xpanel-wrapper-75">
-						<div id="chart33" class="xpanel xpanel-r-t">
-							<div class="title">33</div>
-						</div>
+					<div class="xpanel-wrapper xpanel-wrapper-6">
+                          
 					</div>
-					<!--<div class="xpanel-wrapper xpanel-wrapper-30">
-						<div class="xpanel xpanel-r-m">
+					<div class="xpanel-wrapper xpanel-wrapper-50">
+						<div id="chart1_5" class="xpanel xpanel-ccc">
 							<div class="title">44</div>
 						</div>
-					</div>-->
-					<div class="xpanel-wrapper xpanel-wrapper-25">
-						<div id="chart55" class="xpanel xpanel-r-b">
+					</div>
+
+					<div class="xpanel-wrapper xpanel-wrapper-44">
+						<div id="chart1_2" class="xpanel xpanel-ccc">
 							<div class="title">55</div>
 						</div>
 					</div>
 				</div>
 			</div>
+			
 		</div>
+		<!--三个图+时间轴：左一、右侧上边一和二-->
+		<script type="text/javascript" src="js/1_1province_timeline_bar_bottom.js"></script>
+
+		<!--右四-->
+		<!--<script type="text/javascript" src="js/1_4ThemeRiver.js"></script>-->
+
+		<!--右五-->
+		<script type="text/javascript" src="js/1_5增长率.js"></script>
 		
-		<script type="text/javascript" src="js/圆环图.js"></script>
-		<script type="text/javascript" src="js/lines_stack.js"></script>
-		<script type="text/javascript" src="js/sankey.js"></script>
-		<script type="text/javascript" src="js/chinamap_lines.js"></script>
-		<script type="text/javascript" src="js/增长率.js"></script>
-		<script type="text/javascript" src="js/日增长数.js"></script>
-		
+		<script type="text/javascript" src="js/1_4日增长数.js"></script>
+
 	</body>
+
 </html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+		<title>河南省新冠肺炎疫情可视分析系统</title>
+		<link rel="stylesheet" href="css/app.css" />
+		<!--<script src="https://cdn.bootcss.com/echarts/4.2.1-rc1/echarts.min.js"></script>-->
+		<script type="text/javascript" src="https://api.map.baidu.com/api?v=3.0&ak=uifoMQRIzmqknGyYYicbW5sG4akVVBIN&s=1"></script>
+
+		<script src="lib/echarts.min.js"></script>
+		<script src="lib/jquery-3.3.1.js"></script>
+		<!--<script src="lib/china.js"></script>-->
+		<!--<script src="lib/bootstrap.min.js"></script>-->
+		<!--<script src="lib/china-province/henan.js"></script>-->
+		<!--<script type="text/javascript" src="lib/dataTool.js"></script>-->
+		
+		<!--<link rel="stylesheet" href="plugin/layui/css/layui.css">-->
+		<!-- <link rel="stylesheet" href="css/wy_layer.css"> -->
+		<!--<link rel="stylesheet" href="css/scroll.css">-->
+		<!--<link rel="stylesheet" href="css/wyView.css">-->
+		<!--<script src="plugin/layui/layui.all.js"></script>-->
+		
+		<!--<script src="js/timer/digit.js"></script>-->
+	<!--<script src="js/timer/time.js"></script>-->
+		<!--<script src="js/scroll.js"></script>-->
+	</head>
+
+	<body>
+		<div class="header">
+			<h1 class="header-title">郑州市新冠肺炎病例分析</h1>
+		</div>
+		<div style="width: 440px;height: 390px;float:left;margin:10px;" class="xpanel-r-b">
+			<select id="tool" onchange="listen(this.options[this.options.selectedIndex].value)" style="background-color: Transparent; color: #FFFFFF; outline: none; background-repeat:no-repeat;border: 1;cursor:pointer;overflow: hidden;">
+			<option value="病例地图" >病例地图</option>
+			<option value="病例关系图">病例关系图</option>
+		    </select>
+			<div id="chart4_1" style="width: 100%;height: 93%; margin:3px;"></div>
+		</div>
+		<div style="width: 400px; height: 390px;float:right; margin:10px;">
+			<div id="chart4_2" style="width: 100%;height: 100%;" class="xpanel-r-b">
+				</div>
+			<!--<div id="chart4_3" style="width: 100%;height: 50%;" class="xpanel-r-b">-->
+				<!--<div class="list_lh_header">
+					<p style="border-bottom:2px solid rgba(23,40,90,0.8)"><span>ID</span><span>地点</span><span>轨迹信息</span></p>
+				</div>
+				<div style="height: 170px;" class="list_lh">
+					<ul>
+						<li>
+							<p><span>病例1</span><span>郑州市第六人民医院</span><span>病例1：男，65岁，周口市太康县清集镇人。1月7日由武汉乘私家车返回太康县，1月8日前往太康县人民医院就诊，1月10日经120急救车转运至郑州颐和医院就诊，1月20日由负压救护车转诊至郑州市第六人民医院，1月21日确诊。</span></p>
+						</li>
+						<li>
+							<p><span>病例2</span><span>郑州大学第一附属医院</span><span>主会场</span><span>14461,18364</span></p>
+						</li>
+						<li>
+							<p><span>病例3</span><span>巩义市园丁街烟草局家属院</span><span>Room5</span><span> </span></p>
+						</li>
+						<li>
+							<p><span>9:40-9:55</span><span>休息</span><span> </span><span> </span></p>
+						</li>
+						<li>
+							<p><span>9:55-10:25</span><span>报告</span><span>主会场</span><span>15499,11662</span></p>
+						</li>
+						<li>
+							<p><span>10:25-11:10</span><span>休息</span><span></span><span></span></p>
+						</li>
+						<li>
+							<p><span>11:10-12:10</span><span>报告</span><span>主会场</span><span>18608,13922,19145,15626,16975</span></p>
+						</li>
+						<li>
+							<p><span>12:10-13:30</span><span>午休</span><span></span><span></span></p>
+						</li>
+						<li>
+							<p><span>12:50-17:30</span><span>黑客大赛</span><span>Room5</span><span>11619,19299,16045,16817</span></p>
+						</li>
+						<li>
+							<p><span>13:30-14:10</span><span>签到</span><span>签到处</span><span></span></p>
+						</li>
+						<li>
+							<p><span>14:10-15:00</span><span>报告</span><span>分会场A</span><span>16099</span></p>
+						</li>
+						<li>
+							<p><span>14:10-15:35</span><span>报告</span><span>分会场B</span><span>14257,14582</span></p>
+						</li>
+						<li>
+							<p><span>14:10-15:35</span><span>报告</span><span>分会场C</span><span>12320,10463</span></p>
+						</li>
+						<li>
+							<p><span>14:10-15:35</span><span>报告</span><span>分会场D</span><span>18062,18811</span></p>
+						</li>
+
+					</ul>
+				</div>-->
+			<!--</div>-->
+		</div>
+		<!--<div  class="xpanel xpanel-c-b">
+							<div class="title title-long">
+								<button onclick="window.location.href = 'index.html'" style="background-color: Transparent; color: #FFFFFF; outline: none; background-repeat:no-repeat;border: 1;cursor:pointer;overflow: hidden;">河南省疫情总体分析</button>
+							  <button onclick="window.location.href = '河南省各市比较分析.html'" style="background-color: Transparent; color: #FFFFFF; outline: none; background-repeat:no-repeat;border: 1;cursor:pointer;overflow: hidden;">河南省疫情各市比较分析</button>
+							
+							</div>
+						</div>-->
+
+		<!--左一郑州地图-->
+		<script type="text/javascript" src="js/4_1baidu_map.js"></script>
+
+		<!--右一双柱图-->
+		<script type="text/javascript" src="js/4_2double_bar.js"></script>
+
+		<!--右二inferbox-->
+		<!--<script type="text/javascript" src="js/2_3圆环图.js"></script>-->
+
+		<!--右三-->
+		<!--<script type="text/javascript" src="js/2_4double_bar.js"></script>-->
+		<!--<script type="text/javascript">
+			$('.list_lh li:even').addClass('lieven');
+			$("div.list_lh").myScroll({
+				speed: 40, //数值越大，速度越慢
+				rowHeight: 38 //li的高度
+			});
+		</script>-->
+
+	</body>
+
+</html>
