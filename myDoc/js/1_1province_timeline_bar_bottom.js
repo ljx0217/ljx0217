@@ -100,8 +100,8 @@ $.get('data/chart1/河南timeline_bar.json', function(result) {
 				y: '60%',
 				type: 'continuous', // 定义为连续型 viusalMap
 				min: 0, //指定 visualMapContinuous 组件的允许的最小值
-				max: 255, //指定 visualMapContinuous 组件的允许的最大值
-				range: [0, 255],
+				max: 275, //指定 visualMapContinuous 组件的允许的最大值
+				range: [0, 275],
 				calculable: true,
 				
 		color:["#013c62","#0c67a3","#2998e1",],
@@ -131,6 +131,7 @@ $.get('data/chart1/河南timeline_bar.json', function(result) {
 				    left:'18%',
                     bottom: '5%',
 					roam: true, //是否开启鼠标缩放和平移漫游
+					
 					itemStyle: { //地图区域的多边形 图形样式
 						normal: { //是图形在默认状态下的样式
 							borderColor: '#43bbff',
@@ -608,7 +609,7 @@ myChart1_2.setOption(option1_2);
 //				y: '1%',
 				textStyle: {
 					color:"#fff",
-					fontSize: 16,
+					fontSize: 14,
 					//				font-family:"黑体"
 				}
 			}
@@ -721,7 +722,8 @@ myChart1_2.setOption(option1_2);
 			title: {
 				subtext:datas.timeline[n]+':\n'+datas.aaa[n],
 				subtextStyle:{
-					color:'#fff'
+					color:'#fff',
+					fontSize:14
 				}
 					},
 			xAxis: {

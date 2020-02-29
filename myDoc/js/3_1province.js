@@ -68,12 +68,12 @@ $.get('data/动态图河南病例类型.json', function(result) {
 		},
 		//			color: '#fff',
 		legend: {
-			show: false,
+			show: true,
 			orient: 'horizontal', //图例的排列方向
-			x: 'right', //图例的位置
-			//				y:'10%',
+			x: 'left', //图例的位置
+			y:'bottom',
 
-			data: ['累计总数', '外省输入病例', '本省输入病例', '本地病例'],
+			data: ['累计确诊病例总数'],
 			textStyle: {
 				color: '#fff',
 				fontSize: 10
@@ -156,7 +156,7 @@ $.get('data/动态图河南病例类型.json', function(result) {
 			}
 		}, {
 			//文字和标志
-			name: '累计总数',
+			name: '累计确诊病例总数',
 			type: 'effectScatter',
 			coordinateSystem: 'geo',
 			data: scatter_data(datas.data[n]),
@@ -179,7 +179,7 @@ $.get('data/动态图河南病例类型.json', function(result) {
 					color: '#DAA520',
 					formatter: '{b}',
 					position: 'bottom',
-					show: true
+					show: false
 				},
 				emphasis: {
 					show: true
@@ -206,7 +206,7 @@ $.get('data/动态图河南病例类型.json', function(result) {
 				type: 2,
 				shade: [0.8, '#0f0f10'],
 				content: ['郑州市.html', 'yes'],
-				area: ['900px', '450px']
+				area: ['1000px', '500px']
 			});
 		}
 	});
@@ -306,7 +306,7 @@ $.get('data/动态图河南病例类型.json', function(result) {
 		yAxis: {
 			type: 'value',
 			name: '治愈人数',
-			max: 200,
+			max: 240,
 			nameTextStyle: {
 				color: '#fff',
 				fontSize: 12
@@ -403,7 +403,7 @@ $.get('data/动态图河南病例类型.json', function(result) {
 				type: 2,
 				shade: [0.8, '#0f0f10'],
 				content: ['郑州市.html', 'yes'],
-				area: ['900px', '450px']
+				area: ['1000px', '500px']
 			});
 		}
 	});
@@ -456,7 +456,7 @@ $.get('data/动态图河南病例类型.json', function(result) {
 				//				y: '1%',
 				textStyle: {
 					color: "#fff",
-					fontSize: 16,
+					fontSize: 14,
 					//				font-family:"黑体"
 				}
 			}],
@@ -545,7 +545,8 @@ $.get('data/动态图河南病例类型.json', function(result) {
 			title: {
 				subtext: datas.timeline[n] + ':\n' + datas.aaa[n],
 				subtextStyle: {
-					color: '#fff'
+					color: '#fff',
+					fontSize:14
 				}
 			},
 			xAxis: {

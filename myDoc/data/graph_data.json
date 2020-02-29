@@ -5,57 +5,63 @@
     "nodes": [
         {
             "name": "疑似病例", 
-            "category": 2, 
+            "category": 3, 
             "_type": "person", 
             "id": "疑似病例"
         }, 
         {
             "name": "确诊病例", 
-            "category": 2, 
+            "category": 3, 
             "_type": "person", 
             "id": "确诊病例"
         }, 
         {
             "name": "武汉人员", 
-            "category": 2, 
+            "category": 3, 
             "_type": "person", 
             "id": "武汉人员"
         }, 
         {
             "name": "南阳人员", 
-            "category": 2, 
+            "category": 3, 
             "_type": "person", 
             "id": "南阳人员"
         }, 
         {
             "name": "武汉", 
-            "category": 3, 
+            "category": 4, 
             "_type": "address", 
             "id": "武汉"
         }, 
         {
             "name": "黄冈", 
-            "category": 3, 
+            "category": 4, 
             "_type": "address", 
             "id": "黄冈"
         }, 
         {
             "name": "荆州", 
-            "category": 3, 
+            "category": 4, 
             "_type": "address", 
             "id": "荆州"
         }, 
         {
             "name": "天门", 
-            "category": 3, 
+            "category": 4, 
             "_type": "address", 
             "id": "天门"
         }, 
         {
             "name": "信阳", 
-            "category": 3, 
+            "category": 4, 
             "_type": "address", 
             "id": "信阳"
+        }, 
+        {
+            "name": "越南", 
+            "category": 4, 
+            "_type": "address", 
+            "id": "越南"
         }, 
         {
             "name": "A1", 
@@ -93,7 +99,7 @@
             "name": "A5", 
             "sex": "女", 
             "old": 30.0, 
-            "category": 1, 
+            "category": 0, 
             "_type": "person", 
             "id": "病例5"
         }, 
@@ -149,7 +155,7 @@
             "name": "A12", 
             "sex": "男", 
             "old": 24.0, 
-            "category": 0, 
+            "category": 1, 
             "_type": "person", 
             "id": "病例12"
         }, 
@@ -173,7 +179,7 @@
             "name": "A15", 
             "sex": "女", 
             "old": 17.0, 
-            "category": 1, 
+            "category": 0, 
             "_type": "person", 
             "id": "病例15"
         }, 
@@ -237,7 +243,7 @@
             "name": "A23", 
             "sex": "女", 
             "old": 43.0, 
-            "category": 1, 
+            "category": 0, 
             "_type": "person", 
             "id": "病例23"
         }, 
@@ -245,7 +251,7 @@
             "name": "A24", 
             "sex": "女", 
             "old": 33.0, 
-            "category": 1, 
+            "category": 0, 
             "_type": "person", 
             "id": "病例24"
         }, 
@@ -277,7 +283,7 @@
             "name": "A28", 
             "sex": "女", 
             "old": 50.0, 
-            "category": 1, 
+            "category": 0, 
             "_type": "person", 
             "id": "病例28"
         }, 
@@ -293,7 +299,7 @@
             "name": "A30", 
             "sex": "女", 
             "old": 57.0, 
-            "category": 1, 
+            "category": 0, 
             "_type": "person", 
             "id": "病例30"
         }, 
@@ -317,7 +323,7 @@
             "name": "A33", 
             "sex": "女", 
             "old": 35.0, 
-            "category": 1, 
+            "category": 0, 
             "_type": "person", 
             "id": "病例33"
         }, 
@@ -325,7 +331,7 @@
             "name": "A34", 
             "sex": "女", 
             "old": 36.0, 
-            "category": 1, 
+            "category": 0, 
             "_type": "person", 
             "id": "病例34"
         }, 
@@ -357,7 +363,7 @@
             "name": "A38", 
             "sex": "男", 
             "old": 31.0, 
-            "category": 0, 
+            "category": 1, 
             "_type": "person", 
             "id": "病例38"
         }, 
@@ -381,7 +387,7 @@
             "name": "A41", 
             "sex": "女", 
             "old": 51.0, 
-            "category": 1, 
+            "category": 0, 
             "_type": "person", 
             "id": "病例41"
         }, 
@@ -389,7 +395,7 @@
             "name": "A42", 
             "sex": "女", 
             "old": 50.0, 
-            "category": 1, 
+            "category": 0, 
             "_type": "person", 
             "id": "病例42"
         }, 
@@ -397,7 +403,7 @@
             "name": "A43", 
             "sex": "女", 
             "old": 26.0, 
-            "category": 1, 
+            "category": 0, 
             "_type": "person", 
             "id": "病例43"
         }, 
@@ -405,7 +411,7 @@
             "name": "A44", 
             "sex": "女", 
             "old": 47.0, 
-            "category": 1, 
+            "category": 0, 
             "_type": "person", 
             "id": "病例44"
         }, 
@@ -421,7 +427,7 @@
             "name": "A46", 
             "sex": "女", 
             "old": 56.0, 
-            "category": 1, 
+            "category": 0, 
             "_type": "person", 
             "id": "病例46"
         }, 
@@ -469,7 +475,7 @@
             "name": "A52", 
             "sex": "男", 
             "old": 54.0, 
-            "category": 0, 
+            "category": 1, 
             "_type": "person", 
             "id": "病例52"
         }, 
@@ -485,7 +491,7 @@
             "name": "A54", 
             "sex": "女", 
             "old": 27.0, 
-            "category": 1, 
+            "category": 0, 
             "_type": "person", 
             "id": "病例54"
         }, 
@@ -498,10 +504,13 @@
             "id": "病例55"
         }, 
         {
+            "id": "湘潭"
+        }, 
+        {
             "name": "A56", 
             "sex": "女", 
             "old": 46.0, 
-            "category": 1, 
+            "category": 0, 
             "_type": "person", 
             "id": "病例56"
         }, 
@@ -517,7 +526,7 @@
             "name": "A58", 
             "sex": "男", 
             "old": 46.0, 
-            "category": 0, 
+            "category": 2, 
             "_type": "person", 
             "id": "病例58"
         }, 
@@ -533,7 +542,7 @@
             "name": "A60", 
             "sex": "男", 
             "old": 21.0, 
-            "category": 0, 
+            "category": 1, 
             "_type": "person", 
             "id": "病例60"
         }, 
@@ -573,7 +582,7 @@
             "name": "A65", 
             "sex": "女", 
             "old": 51.0, 
-            "category": 1, 
+            "category": 0, 
             "_type": "person", 
             "id": "病例65"
         }, 
@@ -581,7 +590,7 @@
             "name": "A66", 
             "sex": "男", 
             "old": 28.0, 
-            "category": 0, 
+            "category": 1, 
             "_type": "person", 
             "id": "病例66"
         }, 
@@ -605,7 +614,7 @@
             "name": "A69", 
             "sex": "女", 
             "old": 35.0, 
-            "category": 1, 
+            "category": 0, 
             "_type": "person", 
             "id": "病例69"
         }, 
@@ -627,9 +636,9 @@
         }, 
         {
             "name": "A72", 
-            "sex": "", 
+            "sex": "女", 
             "old": 44.0, 
-            "category": 1, 
+            "category": 0, 
             "_type": "person", 
             "id": "病例72"
         }, 
@@ -645,7 +654,7 @@
             "name": "A74", 
             "sex": "女", 
             "old": 55.0, 
-            "category": 1, 
+            "category": 0, 
             "_type": "person", 
             "id": "病例74"
         }, 
@@ -661,7 +670,7 @@
             "name": "A76", 
             "sex": "男", 
             "old": 36.0, 
-            "category": 0, 
+            "category": 1, 
             "_type": "person", 
             "id": "病例76"
         }, 
@@ -685,7 +694,7 @@
             "name": "A79", 
             "sex": "女", 
             "old": 53.0, 
-            "category": 1, 
+            "category": 0, 
             "_type": "person", 
             "id": "病例79"
         }, 
@@ -693,7 +702,7 @@
             "name": "A80", 
             "sex": "男", 
             "old": 28.0, 
-            "category": 0, 
+            "category": 1, 
             "_type": "person", 
             "id": "病例80"
         }, 
@@ -701,7 +710,7 @@
             "name": "A81", 
             "sex": "男", 
             "old": 34.0, 
-            "category": 0, 
+            "category": 1, 
             "_type": "person", 
             "id": "病例81"
         }, 
@@ -717,7 +726,7 @@
             "name": "A83", 
             "sex": "男", 
             "old": 40.0, 
-            "category": 0, 
+            "category": 1, 
             "_type": "person", 
             "id": "病例83"
         }, 
@@ -725,7 +734,7 @@
             "name": "A84", 
             "sex": "男", 
             "old": 57.0, 
-            "category": 0, 
+            "category": 1, 
             "_type": "person", 
             "id": "病例84"
         }, 
@@ -733,7 +742,7 @@
             "name": "A85", 
             "sex": "女", 
             "old": 6.0, 
-            "category": 1, 
+            "category": 0, 
             "_type": "person", 
             "id": "病例85"
         }, 
@@ -741,7 +750,7 @@
             "name": "A86", 
             "sex": "男", 
             "old": 4.0, 
-            "category": 0, 
+            "category": 1, 
             "_type": "person", 
             "id": "病例86"
         }, 
@@ -749,7 +758,7 @@
             "name": "A87", 
             "sex": "女", 
             "old": 73.0, 
-            "category": 1, 
+            "category": 0, 
             "_type": "person", 
             "id": "病例87"
         }, 
@@ -757,7 +766,7 @@
             "name": "A88", 
             "sex": "女", 
             "old": 8.0, 
-            "category": 1, 
+            "category": 0, 
             "_type": "person", 
             "id": "病例88"
         }, 
@@ -765,7 +774,7 @@
             "name": "A89", 
             "sex": "男", 
             "old": 40.0, 
-            "category": 0, 
+            "category": 1, 
             "_type": "person", 
             "id": "病例89"
         }, 
@@ -773,7 +782,7 @@
             "name": "A90", 
             "sex": "男", 
             "old": 73.0, 
-            "category": 0, 
+            "category": 1, 
             "_type": "person", 
             "id": "病例90"
         }, 
@@ -781,7 +790,7 @@
             "name": "A91", 
             "sex": "女", 
             "old": 52.0, 
-            "category": 1, 
+            "category": 2, 
             "_type": "person", 
             "id": "病例91"
         }, 
@@ -813,7 +822,7 @@
             "name": "A95", 
             "sex": "女", 
             "old": 38.0, 
-            "category": 1, 
+            "category": 0, 
             "_type": "person", 
             "id": "病例95"
         }, 
@@ -821,7 +830,7 @@
             "name": "A96", 
             "sex": "女", 
             "old": 34.0, 
-            "category": 1, 
+            "category": 0, 
             "_type": "person", 
             "id": "病例96"
         }, 
@@ -829,7 +838,7 @@
             "name": "A97", 
             "sex": "男", 
             "old": 75.0, 
-            "category": 0, 
+            "category": 1, 
             "_type": "person", 
             "id": "病例97"
         }, 
@@ -837,7 +846,7 @@
             "name": "A98", 
             "sex": "男", 
             "old": 40.0, 
-            "category": 0, 
+            "category": 2, 
             "_type": "person", 
             "id": "病例98"
         }, 
@@ -845,7 +854,7 @@
             "name": "A99", 
             "sex": "女", 
             "old": 33.0, 
-            "category": 1, 
+            "category": 2, 
             "_type": "person", 
             "id": "病例99"
         }, 
@@ -853,7 +862,7 @@
             "name": "A100", 
             "sex": "女 ", 
             "old": 38.0, 
-            "category": 1, 
+            "category": 2, 
             "_type": "person", 
             "id": "病例100"
         }, 
@@ -877,7 +886,7 @@
             "name": "A103", 
             "sex": "男", 
             "old": 15.0, 
-            "category": 0, 
+            "category": 1, 
             "_type": "person", 
             "id": "病例103"
         }, 
@@ -885,7 +894,7 @@
             "name": "A104", 
             "sex": "男", 
             "old": 34.0, 
-            "category": 0, 
+            "category": 2, 
             "_type": "person", 
             "id": "病例104"
         }, 
@@ -893,7 +902,7 @@
             "name": "A105", 
             "sex": "男", 
             "old": 57.0, 
-            "category": 0, 
+            "category": 2, 
             "_type": "person", 
             "id": "病例105"
         }, 
@@ -909,7 +918,7 @@
             "name": "A107", 
             "sex": "男", 
             "old": 33.0, 
-            "category": 0, 
+            "category": 1, 
             "_type": "person", 
             "id": "病例107"
         }, 
@@ -933,7 +942,7 @@
             "name": "A110", 
             "sex": "女", 
             "old": 51.0, 
-            "category": 1, 
+            "category": 2, 
             "_type": "person", 
             "id": "病例110"
         }, 
@@ -941,7 +950,7 @@
             "name": "A111", 
             "sex": "男", 
             "old": 34.0, 
-            "category": 0, 
+            "category": 1, 
             "_type": "person", 
             "id": "病例111"
         }, 
@@ -973,7 +982,7 @@
             "name": "A115", 
             "sex": "女", 
             "old": 33.0, 
-            "category": 1, 
+            "category": 0, 
             "_type": "person", 
             "id": "病例115"
         }, 
@@ -981,7 +990,7 @@
             "name": "A116", 
             "sex": "女", 
             "old": 57.0, 
-            "category": 1, 
+            "category": 2, 
             "_type": "person", 
             "id": "病例116"
         }, 
@@ -989,7 +998,7 @@
             "name": "A117", 
             "sex": "男", 
             "old": 27.0, 
-            "category": 0, 
+            "category": 2, 
             "_type": "person", 
             "id": "病例117"
         }, 
@@ -1005,7 +1014,7 @@
             "name": "A119", 
             "sex": "女", 
             "old": 56.0, 
-            "category": 1, 
+            "category": 2, 
             "_type": "person", 
             "id": "病例119"
         }, 
@@ -1029,7 +1038,7 @@
             "name": "A122", 
             "sex": "男", 
             "old": 28.0, 
-            "category": 0, 
+            "category": 1, 
             "_type": "person", 
             "id": "病例122"
         }, 
@@ -1037,7 +1046,7 @@
             "name": "A123", 
             "sex": "女", 
             "old": 39.0, 
-            "category": 1, 
+            "category": 2, 
             "_type": "person", 
             "id": "病例123"
         }, 
@@ -1045,7 +1054,7 @@
             "name": "A124", 
             "sex": "男", 
             "old": 84.0, 
-            "category": 0, 
+            "category": 1, 
             "_type": "person", 
             "id": "病例124"
         }, 
@@ -1053,7 +1062,7 @@
             "name": "A125", 
             "sex": "女", 
             "old": 34.0, 
-            "category": 1, 
+            "category": 2, 
             "_type": "person", 
             "id": "病例125"
         }, 
@@ -1061,9 +1070,260 @@
             "name": "A126", 
             "sex": "女", 
             "old": 26.0, 
-            "category": 1, 
+            "category": 2, 
             "_type": "person", 
             "id": "病例126"
+        }, 
+        {
+            "name": "A127", 
+            "sex": "女", 
+            "old": 47.0, 
+            "category": 2, 
+            "_type": "person", 
+            "id": "病例127"
+        }, 
+        {
+            "name": "A128", 
+            "sex": "男", 
+            "old": 82.0, 
+            "category": 1, 
+            "_type": "person", 
+            "id": "病例128"
+        }, 
+        {
+            "name": "A129", 
+            "sex": "男", 
+            "old": 70.0, 
+            "category": 1, 
+            "_type": "person", 
+            "id": "病例129"
+        }, 
+        {
+            "name": "A130", 
+            "sex": "女", 
+            "old": 74.0, 
+            "category": 1, 
+            "_type": "person", 
+            "id": "病例130"
+        }, 
+        {
+            "name": "A131", 
+            "sex": "男", 
+            "old": 47.0, 
+            "category": 2, 
+            "_type": "person", 
+            "id": "病例131"
+        }, 
+        {
+            "name": "A132", 
+            "sex": "男", 
+            "old": 7.0, 
+            "category": 0, 
+            "_type": "person", 
+            "id": "病例132"
+        }, 
+        {
+            "name": "A133", 
+            "sex": "女", 
+            "old": 57.0, 
+            "category": 2, 
+            "_type": "person", 
+            "id": "病例133"
+        }, 
+        {
+            "name": "A134", 
+            "sex": "女", 
+            "old": 66.0, 
+            "category": 1, 
+            "_type": "person", 
+            "id": "病例134"
+        }, 
+        {
+            "name": "A135", 
+            "sex": "女", 
+            "old": 25.0, 
+            "category": 0, 
+            "_type": "person", 
+            "id": "病例135"
+        }, 
+        {
+            "name": "A136", 
+            "sex": "女", 
+            "old": 5.0, 
+            "category": 1, 
+            "_type": "person", 
+            "id": "病例136"
+        }, 
+        {
+            "name": "A137", 
+            "sex": "女", 
+            "old": 32.0, 
+            "category": 1, 
+            "_type": "person", 
+            "id": "病例137"
+        }, 
+        {
+            "name": "A138", 
+            "sex": "男", 
+            "old": 58.0, 
+            "category": 2, 
+            "_type": "person", 
+            "id": "病例138"
+        }, 
+        {
+            "name": "A139", 
+            "sex": "女", 
+            "old": 32.0, 
+            "category": 0, 
+            "_type": "person", 
+            "id": "病例139"
+        }, 
+        {
+            "name": "A140", 
+            "sex": "女", 
+            "old": 60.0, 
+            "category": 0, 
+            "_type": "person", 
+            "id": "病例140"
+        }, 
+        {
+            "name": "A141", 
+            "sex": "男", 
+            "old": 40.0, 
+            "category": 0, 
+            "_type": "person", 
+            "id": "病例141"
+        }, 
+        {
+            "name": "A142", 
+            "sex": "男", 
+            "old": 42.0, 
+            "category": 1, 
+            "_type": "person", 
+            "id": "病例142"
+        }, 
+        {
+            "name": "A143", 
+            "sex": "女", 
+            "old": 51.0, 
+            "category": 1, 
+            "_type": "person", 
+            "id": "病例143"
+        }, 
+        {
+            "name": "A144", 
+            "sex": "女", 
+            "old": 44.0, 
+            "category": 1, 
+            "_type": "person", 
+            "id": "病例144"
+        }, 
+        {
+            "name": "A145", 
+            "sex": "男", 
+            "old": 63.0, 
+            "category": 1, 
+            "_type": "person", 
+            "id": "病例145"
+        }, 
+        {
+            "name": "A146", 
+            "sex": "男", 
+            "old": 40.0, 
+            "category": 1, 
+            "_type": "person", 
+            "id": "病例146"
+        }, 
+        {
+            "name": "A147", 
+            "sex": "女", 
+            "old": 22.0, 
+            "category": 1, 
+            "_type": "person", 
+            "id": "病例147"
+        }, 
+        {
+            "name": "A148", 
+            "sex": "男", 
+            "old": 68.0, 
+            "category": 1, 
+            "_type": "person", 
+            "id": "病例148"
+        }, 
+        {
+            "name": "A149", 
+            "sex": "男", 
+            "old": 74.0, 
+            "category": 2, 
+            "_type": "person", 
+            "id": "病例149"
+        }, 
+        {
+            "name": "A150", 
+            "sex": "男", 
+            "old": 48.0, 
+            "category": 0, 
+            "_type": "person", 
+            "id": "病例150"
+        }, 
+        {
+            "name": "A151", 
+            "sex": "男", 
+            "old": 32.0, 
+            "category": 0, 
+            "_type": "person", 
+            "id": "病例151"
+        }, 
+        {
+            "name": "A152", 
+            "sex": "男", 
+            "old": 29.0, 
+            "category": 1, 
+            "_type": "person", 
+            "id": "病例152"
+        }, 
+        {
+            "name": "A153", 
+            "sex": "女", 
+            "old": 72.0, 
+            "category": 1, 
+            "_type": "person", 
+            "id": "病例153"
+        }, 
+        {
+            "name": "A154", 
+            "sex": "女", 
+            "old": 47.0, 
+            "category": 1, 
+            "_type": "person", 
+            "id": "病例154"
+        }, 
+        {
+            "name": "A155", 
+            "sex": "男", 
+            "old": 71.0, 
+            "category": 1, 
+            "_type": "person", 
+            "id": "病例155"
+        }, 
+        {
+            "name": "A156", 
+            "sex": "女", 
+            "old": 46.0, 
+            "category": 1, 
+            "_type": "person", 
+            "id": "病例156"
+        }, 
+        {
+            "name": "A157", 
+            "sex": "女", 
+            "old": 49.0, 
+            "category": 1, 
+            "_type": "person", 
+            "id": "病例157"
+        }, 
+        {
+            "id": "155"
         }
     ], 
     "links": [
@@ -1114,6 +1374,11 @@
         }, 
         {
             "name": "接触", 
+            "source": "疑似病例", 
+            "target": "病例143"
+        }, 
+        {
+            "name": "接触", 
             "source": "确诊病例", 
             "target": "病例66"
         }, 
@@ -1144,6 +1409,11 @@
         }, 
         {
             "name": "接触", 
+            "source": "确诊病例", 
+            "target": "病例156"
+        }, 
+        {
+            "name": "接触", 
             "source": "武汉人员", 
             "target": "病例92"
         }, 
@@ -1156,6 +1426,16 @@
             "name": "接触", 
             "source": "武汉人员", 
             "target": "病例109"
+        }, 
+        {
+            "name": "接触", 
+            "source": "武汉人员", 
+            "target": "病例128"
+        }, 
+        {
+            "name": "接触", 
+            "source": "武汉人员", 
+            "target": "病例134"
         }, 
         {
             "name": "接触", 
@@ -1181,6 +1461,11 @@
             "name": "来源", 
             "source": "武汉", 
             "target": "病例5"
+        }, 
+        {
+            "name": "来源", 
+            "source": "武汉", 
+            "target": "病例6"
         }, 
         {
             "name": "来源", 
@@ -1216,6 +1501,11 @@
             "name": "来源", 
             "source": "武汉", 
             "target": "病例16"
+        }, 
+        {
+            "name": "来源", 
+            "source": "武汉", 
+            "target": "病例17"
         }, 
         {
             "name": "来源", 
@@ -1365,6 +1655,16 @@
         {
             "name": "来源", 
             "source": "武汉", 
+            "target": "病例56"
+        }, 
+        {
+            "name": "来源", 
+            "source": "武汉", 
+            "target": "病例59"
+        }, 
+        {
+            "name": "来源", 
+            "source": "武汉", 
             "target": "病例61"
         }, 
         {
@@ -1420,12 +1720,27 @@
         {
             "name": "来源", 
             "source": "武汉", 
+            "target": "病例96"
+        }, 
+        {
+            "name": "来源", 
+            "source": "武汉", 
             "target": "病例115"
         }, 
         {
             "name": "来源", 
             "source": "武汉", 
             "target": "病例121"
+        }, 
+        {
+            "name": "来源", 
+            "source": "武汉", 
+            "target": "病例135"
+        }, 
+        {
+            "name": "来源", 
+            "source": "武汉", 
+            "target": "病例141"
         }, 
         {
             "name": "来源", 
@@ -1439,8 +1754,18 @@
         }, 
         {
             "name": "来源", 
-            "source": "荆州", 
-            "target": "病例17"
+            "source": "黄冈", 
+            "target": "病例132"
+        }, 
+        {
+            "name": "来源", 
+            "source": "黄冈", 
+            "target": "病例139"
+        }, 
+        {
+            "name": "来源", 
+            "source": "黄冈", 
+            "target": "病例140"
         }, 
         {
             "name": "来源", 
@@ -1468,6 +1793,66 @@
             "target": "病例120"
         }, 
         {
+            "name": "来源", 
+            "source": "信阳", 
+            "target": "病例148"
+        }, 
+        {
+            "name": "来源", 
+            "source": "信阳", 
+            "target": "病例154"
+        }, 
+        {
+            "name": "来源", 
+            "source": "越南", 
+            "target": "病例49"
+        }, 
+        {
+            "name": "来源", 
+            "source": "越南", 
+            "target": "病例58"
+        }, 
+        {
+            "name": "来源", 
+            "source": "越南", 
+            "target": "病例98"
+        }, 
+        {
+            "name": "来源", 
+            "source": "越南", 
+            "target": "病例99"
+        }, 
+        {
+            "name": "来源", 
+            "source": "越南", 
+            "target": "病例104"
+        }, 
+        {
+            "name": "来源", 
+            "source": "越南", 
+            "target": "病例105"
+        }, 
+        {
+            "name": "来源", 
+            "source": "越南", 
+            "target": "病例110"
+        }, 
+        {
+            "name": "来源", 
+            "source": "越南", 
+            "target": "病例116"
+        }, 
+        {
+            "name": "来源", 
+            "source": "越南", 
+            "target": "病例125"
+        }, 
+        {
+            "name": "来源", 
+            "source": "越南", 
+            "target": "病例133"
+        }, 
+        {
             "name": "家属", 
             "source": "病例2", 
             "target": "病例4"
@@ -1493,6 +1878,11 @@
             "target": "病例52"
         }, 
         {
+            "name": "亲属", 
+            "source": "病例48", 
+            "target": "病例136"
+        }, 
+        {
             "name": "同行", 
             "source": "病例49", 
             "target": "病例98"
@@ -1526,6 +1916,11 @@
             "name": "同行", 
             "source": "病例49", 
             "target": "病例125"
+        }, 
+        {
+            "name": "同行", 
+            "source": "病例49", 
+            "target": "病例133"
         }, 
         {
             "name": "家属", 
@@ -1533,9 +1928,19 @@
             "target": "病例62"
         }, 
         {
+            "name": "来源", 
+            "source": "病例55", 
+            "target": "湘潭"
+        }, 
+        {
             "name": "家属", 
             "source": "病例57", 
             "target": "病例123"
+        }, 
+        {
+            "name": "家属", 
+            "source": "病例57", 
+            "target": "病例142"
         }, 
         {
             "name": "同行", 
@@ -1545,7 +1950,17 @@
         {
             "name": "同行", 
             "source": "病例58", 
+            "target": "病例99"
+        }, 
+        {
+            "name": "同行", 
+            "source": "病例58", 
             "target": "病例104"
+        }, 
+        {
+            "name": "同行", 
+            "source": "病例58", 
+            "target": "病例105"
         }, 
         {
             "name": "同行", 
@@ -1564,13 +1979,13 @@
         }, 
         {
             "name": "同行", 
-            "source": "病例59", 
-            "target": "病例99"
+            "source": "病例58", 
+            "target": "病例133"
         }, 
         {
-            "name": "同行", 
-            "source": "病例59", 
-            "target": "病例105"
+            "name": "家属", 
+            "source": "病例60", 
+            "target": "病例127"
         }, 
         {
             "name": "家属", 
@@ -1581,6 +1996,11 @@
             "name": "家属", 
             "source": "病例61", 
             "target": "病例121"
+        }, 
+        {
+            "name": "亲属", 
+            "source": "病例65", 
+            "target": "病例135"
         }, 
         {
             "name": "家属", 
@@ -1618,6 +2038,11 @@
             "target": "病例112"
         }, 
         {
+            "name": "亲属", 
+            "source": "病例78", 
+            "target": "病例137"
+        }, 
+        {
             "name": "家属", 
             "source": "病例79", 
             "target": "病例80"
@@ -1636,6 +2061,11 @@
             "name": "家属", 
             "source": "病例79", 
             "target": "病例112"
+        }, 
+        {
+            "name": "亲属", 
+            "source": "病例79", 
+            "target": "病例137"
         }, 
         {
             "name": "家属", 
@@ -1661,6 +2091,16 @@
             "name": "家属", 
             "source": "病例88", 
             "target": "病例97"
+        }, 
+        {
+            "name": "家属", 
+            "source": "病例90", 
+            "target": "病例131"
+        }, 
+        {
+            "name": "家属", 
+            "source": "病例92", 
+            "target": "病例138"
         }, 
         {
             "name": "亲属", 
@@ -1696,6 +2136,76 @@
             "name": "接触", 
             "source": "病例108", 
             "target": "病例126"
+        }, 
+        {
+            "name": "家属", 
+            "source": "病例113", 
+            "target": "病例132"
+        }, 
+        {
+            "name": "家属", 
+            "source": "病例113", 
+            "target": "病例139"
+        }, 
+        {
+            "name": "家属", 
+            "source": "病例113", 
+            "target": "病例140"
+        }, 
+        {
+            "name": "家属", 
+            "source": "病例123", 
+            "target": "病例142"
+        }, 
+        {
+            "name": "家属", 
+            "source": "病例128", 
+            "target": "病例130"
+        }, 
+        {
+            "name": "家属", 
+            "source": "病例128", 
+            "target": "病例141"
+        }, 
+        {
+            "name": "家属", 
+            "source": "病例130", 
+            "target": "病例141"
+        }, 
+        {
+            "name": "接触", 
+            "source": "病例145", 
+            "target": "病例146"
+        }, 
+        {
+            "name": "护士", 
+            "source": "病例145", 
+            "target": "病例148"
+        }, 
+        {
+            "name": "家属", 
+            "source": "病例145", 
+            "target": "病例151"
+        }, 
+        {
+            "name": "家属", 
+            "source": "病例146", 
+            "target": "病例149"
+        }, 
+        {
+            "name": "家属", 
+            "source": "病例153", 
+            "target": "病例155"
+        }, 
+        {
+            "name": "家属", 
+            "source": "病例153", 
+            "target": "病例157"
+        }, 
+        {
+            "name": "家属", 
+            "source": "病例157", 
+            "target": "155"
         }
     ]
 }

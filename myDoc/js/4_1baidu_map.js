@@ -238,25 +238,25 @@ function listen(v) {
 					}
 				},
 				// 工具箱
-				toolbox: {
-					iconStyle: {
-						normal: {
-							borderColor: '#fff'
-						},
-						emphasis: {
-							borderColor: '#b1e4ff'
-						}
-					},
-					feature: {
-						dataZoom: {},
-						brush: {
-							type: ['rect', 'polygon', 'clear']
-						},
-						saveAsImage: {
-							show: true
-						}
-					}
-				},
+//				toolbox: {
+//					iconStyle: {
+//						normal: {
+//							borderColor: '#fff'
+//						},
+//						emphasis: {
+//							borderColor: '#b1e4ff'
+//						}
+//					},
+//					feature: {
+//						dataZoom: {},
+//						brush: {
+//							type: ['rect', 'polygon', 'clear']
+//						},
+//						saveAsImage: {
+//							show: true
+//						}
+//					}
+//				},
 				legend: [{
 					// selectedMode: 'single',
 					data: categories.map(function(a) {

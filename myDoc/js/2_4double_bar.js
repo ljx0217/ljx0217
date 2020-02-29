@@ -10,7 +10,7 @@ var myData = ['1月21日', '1月22日', '1月23日', '1月24日', '1月25日',
 	'1月26日', '1月27日', '1月28日', '1月29日', '1月30日', '1月31日', '2月1日', '2月2日', '2月3日',
 	'2月4日', '2月5日', '2月6日', '2月7日', '2月8日', '2月9日', '2月10日', '2月11日', '2月12日', '2月13日',
 	'2月14日', '2月15日','2月16日', '2月17日', '2月18日', '2月19日', '2月20日', '2月21日', '2月22日', '2月23日',
-	'2月24日'
+	'2月24日','2月25日','2月26日', '2月27日', '2月28日'
 ];
 $.get("data/时间分布柱状图.json", function(data) {
 	console.log(signal);
@@ -129,7 +129,7 @@ $.get("data/时间分布柱状图.json", function(data) {
 				margin: 8,
 				textStyle: {
 					color: '#fff',
-					fontSize: 12,
+					fontSize: 10,
 				},
 
 			},
@@ -151,7 +151,7 @@ $.get("data/时间分布柱状图.json", function(data) {
 					color: '#fff',
 					fontSize: 12,
 				},
-				interval: 0
+//				interval: 0
 			},
 			data: myData.map(function(value) {
 				return {
@@ -176,7 +176,7 @@ $.get("data/时间分布柱状图.json", function(data) {
 				show: false,
 				textStyle: {
 					color: '#9D9EA0',
-					fontSize: 12,
+					fontSize: 10,
 				},
 
 			},

@@ -11,8 +11,9 @@
 		<!--<script src="https://cdn.bootcss.com/echarts/4.2.1-rc1/echarts.min.js"></script>-->
 		<script type="text/javascript" src="https://api.map.baidu.com/api?v=3.0&ak=uifoMQRIzmqknGyYYicbW5sG4akVVBIN&s=1"></script>
 
-		<script src="lib/echarts.min.js"></script>
+		<script src="lib/echarts_new/echarts.min.js"></script>
 		<script src="lib/jquery-3.3.1.js"></script>
+		<script src="lib/jquery.js"></script>
 		<!--<script src="lib/china.js"></script>-->
 		<!--<script src="lib/bootstrap.min.js"></script>-->
 		<!--<script src="lib/china-province/henan.js"></script>-->
@@ -33,15 +34,16 @@
 		<div class="header">
 			<h1 class="header-title">郑州市新冠肺炎病例分析</h1>
 		</div>
-		<div style="width: 440px;height: 390px;float:left;margin:10px;" class="xpanel-r-b">
-			<select id="tool" onchange="listen(this.options[this.options.selectedIndex].value)" style="background-color: Transparent; color: #FFFFFF; outline: none; background-repeat:no-repeat;border: 1;cursor:pointer;overflow: hidden;">
+		<div style="width: 470px;height: 440px;float:left;margin:10px;" class="xpanel-r-b">
+			<!--<select id="tool" onchange="listen(this.options[this.options.selectedIndex].value)" style="background-color: Transparent; color: #FFFFFF; outline: none; background-repeat:no-repeat;border: 1;cursor:pointer;overflow: hidden;">
 			<option value="病例地图" >病例地图</option>
 			<option value="病例关系图">病例关系图</option>
-		    </select>
-			<div id="chart4_1" style="width: 100%;height: 93%; margin:3px;"></div>
+		    </select>-->
+			<div id="chart4_2" style="width: 100%;height: 93%; margin:3px;"></div>
+			<button type=button onclick="change()" style="background-color: Transparent; color: #43bbff; outline: none; background-repeat:no-repeat;border: 3px ridge #43bbff;cursor:pointer;overflow: hidden;">重置图谱</button>
 		</div>
-		<div style="width: 400px; height: 390px;float:right; margin:10px;">
-			<div id="chart4_2" style="width: 100%;height: 100%;" class="xpanel-r-b">
+		<div style="width: 470px; height: 440px;float:right; margin:10px;">
+			<div id="chart4_1" style="width: 100%;height: 93%; margin:3px;" class="xpanel-r-b">
 				</div>
 			<!--<div id="chart4_3" style="width: 100%;height: 50%;" class="xpanel-r-b">-->
 				<!--<div class="list_lh_header">
@@ -96,32 +98,20 @@
 				</div>-->
 			<!--</div>-->
 		</div>
-		<!--<div  class="xpanel xpanel-c-b">
-							<div class="title title-long">
-								<button onclick="window.location.href = 'index.html'" style="background-color: Transparent; color: #FFFFFF; outline: none; background-repeat:no-repeat;border: 1;cursor:pointer;overflow: hidden;">河南省疫情总体分析</button>
-							  <button onclick="window.location.href = '河南省各市比较分析.html'" style="background-color: Transparent; color: #FFFFFF; outline: none; background-repeat:no-repeat;border: 1;cursor:pointer;overflow: hidden;">河南省疫情各市比较分析</button>
-							
-							</div>
-						</div>-->
+		
 
 		<!--左一郑州地图-->
-		<script type="text/javascript" src="js/4_1baidu_map.js"></script>
+		<script type="text/javascript" src="js/4_1baidu_map(2).js"></script>
 
 		<!--右一双柱图-->
-		<script type="text/javascript" src="js/4_2double_bar.js"></script>
+		<!--<script type="text/javascript" src="js/4_2double_bar.js"></script>-->
 
 		<!--右二inferbox-->
 		<!--<script type="text/javascript" src="js/2_3圆环图.js"></script>-->
 
 		<!--右三-->
 		<!--<script type="text/javascript" src="js/2_4double_bar.js"></script>-->
-		<!--<script type="text/javascript">
-			$('.list_lh li:even').addClass('lieven');
-			$("div.list_lh").myScroll({
-				speed: 40, //数值越大，速度越慢
-				rowHeight: 38 //li的高度
-			});
-		</script>-->
+		
 
 	</body>
 
