@@ -8,7 +8,7 @@ var dom=document.getElementById("chart2_3");
 					title:{
 						text:'河南省确诊病例来源',
 //						top:'',
-						left:'left',
+						left:'center',
 						textStyle:{
 							color:'#fff',
 							fontSize:14

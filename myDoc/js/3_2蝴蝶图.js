@@ -6,6 +6,7 @@ var myData = ['郑州市', '洛阳市', '三门峡市', '信阳市', '周口市'
 option = {
 	title:{
 		text:'各地市确诊病例类型',
+		x:'center',
 		textStyle:{
 			color:'#fff',
 			fontSize:14

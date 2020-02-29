@@ -6,7 +6,7 @@ var option = {
 	"title": {
 		"text": "河南省确诊病例指数分析",
 		// "subtext": "R0的定义：在发病初期，当所有人均为易感者时，一个病人在其平均患病期内所传染的人数。",
-		x: 'left',
+		x: 'center',
 		y: 'top',
 		textAlign: 'left',
 		textStyle: {

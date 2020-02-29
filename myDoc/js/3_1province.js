@@ -53,7 +53,7 @@ $.get('data/动态图河南病例类型.json', function(result) {
 		//			backgroundColor: '#fff',
 		title: {
 			text: '河南省确诊病例分布图',
-//			x: '15%',
+			x: 'center',
 //			y: '18%',
 			textStyle: {
 				fontSize: 14,
@@ -306,7 +306,7 @@ $.get('data/动态图河南病例类型.json', function(result) {
 		yAxis: {
 			type: 'value',
 			name: '治愈人数',
-			max: 240,
+			max: 300,
 			nameTextStyle: {
 				color: '#fff',
 				fontSize: 12

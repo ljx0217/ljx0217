@@ -217,7 +217,7 @@ $.get('data/chart1/河南timeline_bar.json', function(result) {
 
     title: {
         text: '河南省累计确诊病例统计',
-        left: 'left',
+        left: 'center',
         textStyle: {
 				color:'#fff',
 				fontSize: 14,
@@ -356,7 +356,7 @@ myChart1_2.setOption(option1_2);
 		var option1_3 = {
 			title:{
 				text:'河南省新冠肺炎确诊病例变化图',
-				 left: 'left',
+				 left: 'center',
         textStyle: {
 				color:'#fff',
 				fontSize: 14,

@@ -4,7 +4,7 @@ var myChart_22 = echarts.init(document.getElementById("chart1_4"));
 var option = {
 	
 	title: [{
-			left: 'left',
+			left: 'center',
 			text: '河南省病例日增变化图',
 			textStyle: {
 				color: '#fff',

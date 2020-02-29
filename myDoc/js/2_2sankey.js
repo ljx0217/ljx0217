@@ -72,7 +72,7 @@ var dom = document.getElementById("chart2_2");
 //				console.log(data);
 				var option={
 					title:{
-						left:'left',
+						left:'center',
 						text:'河南省确诊病例来源',
 						textStyle:{
 							color:'#fff',

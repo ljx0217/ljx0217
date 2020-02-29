@@ -18,7 +18,7 @@ $.get("data/时间分布柱状图.json", function(data) {
 		title:{
 						text:'河南省病例来源类型变化',
 //						top:-10,
-						left:'left',
+						left:'center',
 						textStyle:{
 							color:'#fff',
 							fontSize:14
@@ -30,8 +30,10 @@ $.get("data/时间分布柱状图.json", function(data) {
 		},
 		legend: {
 			data: ['本地传播', '省外输入'],
+			orient:'vertical',
 //			top
-			x: "48%",
+			x: "68%",
+			y:"80%",
 			textStyle: { //图例文字的样式
 						color: '#fff',
 						fontSize: 12

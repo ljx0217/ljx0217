@@ -13,6 +13,7 @@ $.get("data/3_3barData.json",function(result){
 	var option3_3 = {
 		title:{
 			text:'各地市现存病例统计',
+			x:'center',
 			textStyle: {
 					fontSize: 14,
 					color:'#fff'
