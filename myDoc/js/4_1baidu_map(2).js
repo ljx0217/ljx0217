@@ -17,7 +17,7 @@ var categories = [{
 	name: "地点"
 }];
 var option4_2 = {
-	backgroundColor: '#093b78',
+//	backgroundColor: '#093b78',
 	// 图的标题
 	title: {
 		// text: 'ECharts 关系图'

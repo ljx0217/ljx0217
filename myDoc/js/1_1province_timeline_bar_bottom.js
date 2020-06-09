@@ -69,7 +69,7 @@ $.get('data/chart1/河南timeline_bar.json', function(result) {
 				fontSize: 16,
 				color: '#43bbff'
 			},
-			itemGap: 190,
+			itemGap: 170,
 			x: '0%',
 			y: '0%'
 		}],
@@ -130,7 +130,7 @@ $.get('data/chart1/河南timeline_bar.json', function(result) {
 		visualMap: { //颜色的设置  dataRange
 			show: true,
 			x: '80%',
-			y: '60%',
+			y: '55%',
 			type: 'continuous', // 定义为连续型 viusalMap
 			min: 0, //指定 visualMapContinuous 组件的允许的最小值
 			max: 275, //指定 visualMapContinuous 组件的允许的最大值
@@ -325,275 +325,200 @@ $.get('data/chart1/河南timeline_bar.json', function(result) {
 		}]
 	};
 	myChart1_2.setOption(option1_2);
-	var title_data = datas.title_data;
-	// 累计治愈人数
-	var Cure = title_data.Cure;
-	var Cures = [];
-	// 轻型和普通型患病人数
-	var QWandPT = title_data.QWandPT;
-	var QWandPTs = [];
-	// 重症患病人数
-	var ZZ = title_data.ZZ;
-	var ZZs = [];
-	// 危重症患病人数
-	var WZZ = title_data.WZZ;
-	var WZZs = [];
-	// 死亡人数
-	var Death = title_data.Death;
-	var Deaths = [];
-	// 总确诊人数
-	var Total = title_data.total;
-	var Totals = [];
-	// X轴数据
-	var xAxisData = title_data.Categories;
-	var xAxisDatas = [];
-	// 时间轴数据
-	//		var timelineData = title_data.Dates;
-	// timeline所需的数据
-	//		var optionsData = [];
-	// 数据长度
-	var len = title_data.Dates.length;
-
-	for(var i = 1; i <= len; i++) {
-		var CureTemp = [];
-		var QWandPTTemp = [];
-		var ZZTemp = [];
-		var WZZTemp = [];
-		var DeathTemp = [];
-		var TotalTemp = [];
-		var xAxisDataTemp = [];
-		for(var j = 0; j < i; j++) {
-			CureTemp.push(Cure[j]);
-			QWandPTTemp.push(QWandPT[j]);
-			ZZTemp.push(ZZ[j]);
-			WZZTemp.push(WZZ[j]);
-			DeathTemp.push(Death[j]);
-			TotalTemp.push(Total[j]);
-			xAxisDataTemp.push(xAxisData[j]);
+	
+	//气泡图
+	var schema = [{
+			name: '确诊',
+			index: 0,
+			text: '确诊',
+			unit: '例'
+		},
+		{
+			name: '治愈',
+			index: 1,
+			text: '治愈',
+			unit: '例'
+		},
+		{
+			name: '死亡',
+			index: 2,
+			text: '死亡',
+			unit: ''
+		},
+		{
+			name: '城市',
+			index: 3,
+			text: '城市',
+			unit: ''
 		}
-		Cures.push(CureTemp);
-		QWandPTs.push(QWandPTTemp);
-		ZZs.push(ZZTemp);
-		WZZs.push(WZZTemp);
-		Deaths.push(DeathTemp);
-		Totals.push(TotalTemp);
-		xAxisDatas.push(xAxisDataTemp);
-	}
-
+	];
+	console.log(datas.double_bar)
+	var double_bar = datas.double_bar;
 	var i = 12;
 	var option1_3 = {
-		title: {
-			text: '河南省新冠肺炎确诊病例变化图',
-			left: 'center',
+		title: [{
+			text: datas.timeline[i],
+			left: '70%',
+			top: '15%',
 			textStyle: {
 				color: '#fff',
-				fontSize: 14,
-
+				fontWeight: 'normal',
+				fontSize: 18
+			}
+		},{
+			text: '河南省各地市病例分析',
+			left: 'center',
+			top: 10,
+			textStyle: {
+				color: '#fff',
+				fontWeight: 'normal',
+				fontSize: 14
+			}
+		},{
+			text: '圆圈大小代表死亡人数',
+			left: 'center',
+			top: 25,
+			textStyle: {
+				color: '#ac533f',
+				fontWeight: 'normal',
+				fontSize: 12
+			}
+		}],
+		tooltip: {
+			padding: 5,
+			//			backgroundColor: '#222',
+			borderColor: '#777',
+			borderWidth: 1,
+			formatter: function(obj) {
+				var value = obj.value;
+				return schema[3].text + '：' + value[3] + '<br>' +
+					schema[0].text + '：' + value[0] + schema[0].unit + '<br>' +
+					schema[1].text + '：' + value[1] + schema[1].unit + '<br>' +
+					schema[2].text + '：' + value[2] + '<br>';
 			}
 		},
-		legend: {
-			orient: 'horizontal',
-			//		left: 'right',
-			top: 20,
-			itemGap: 1,
-			data: ['死亡', '危重型', '重型', '轻型和普通型', '治愈', '确诊'],
-			textStyle: {
-				color: '#fff',
-				fontSize: 10
-			},
-		},
 		grid: {
-			right: 35,
-			top: 35,
-			bottom: 20,
-			width: '85%',
-			height: '70%'
+			top: 40,
+			bottom: 40,
+			left: 40
+			//			containLabel: true,
+			//			left: 30,
+			//			right: '110'
 		},
-		xAxis: [{
-			type: 'category',
-			//				    name: '日期',
-			show: true,
-			data: xAxisDatas[i],
-			axisLable: {
-				show: true
+		xAxis: {
+			//			type: '',
+			name: '确诊人数',
+			max: 300,
+			min: 0,
+			nameGap: 25,
+			nameLocation: 'middle',
+			nameTextStyle: {
+				fontSize: 12
+			},
+			splitLine: {
+				show: false
 			},
 			axisLine: {
 				lineStyle: {
 					color: '#fff'
 				}
 			},
-		}],
-		yAxis: {
-			name: '人数',
-			type: 'value',
-			show: false,
-			splitLine: {
-				show: false,
-				axisLabel: {
-					color: '#fff'
-				},
-				lineStyle: {
-					show: false,
-					color: '#fff',
-					width: 1,
-					type: 'dotted', //虚线
-				},
-			},
-			splitNumber: 10, //y轴分割段数
+			axisLabel: {
+				formatter: '{value} '
+			}
 		},
-		// '总人数', '治愈','轻型和普通型','重型','危重型','死亡'
-		series: [{
-				type: 'bar',
-				name: '死亡',
-				'data': Deaths[i],
-				stack: '总量',
-				barWidth: 10,
-				itemStyle: {
-					normal: {
-						color: ' #A52A2A',
-						opacity: .5
-					}
-				},
+		yAxis: {
+			type: 'value',
+			name: '治愈人数',
+			max: 300,
+			nameTextStyle: {
+				color: '#fff',
+				fontSize: 12
 			},
-			{
-				type: 'bar',
-				name: '危重型',
-				'data': WZZs[i],
-				stack: '总量',
-				barWidth: 10,
-				itemStyle: {
-					normal: {
-						color: ' #ff0000'
-					}
-				},
-			},
-			{
-				type: 'bar',
-				name: '重型',
-				'data': ZZs[i],
-				stack: '总量',
-				barWidth: 10,
-				itemStyle: {
-					normal: {
-						color: ' #e87272'
-					}
-				},
-			},
-			{
-				type: 'bar',
-				name: '轻型和普通型',
-				'data': QWandPTs[i],
-				stack: '总量',
-				barWidth: 10,
-				itemStyle: {
-					normal: {
-						color: ' #f69f36',
-						//						         opacity:.9
-					}
-				},
-			},
-			{
-				type: 'bar',
-				name: '治愈',
-				'data': Cures[i],
-				stack: '总量',
-				barWidth: 10,
-				itemStyle: {
-					normal: {
-						color: ' #69c79b'
-					}
-				},
-			},
-			{
-				name: '确诊',
-				type: 'line',
-				'data': Totals[i],
-				stack: '总人数',
+			axisLine: {
 				lineStyle: {
-					normal: {
-						color: '#1DB7E5',
-					},
-				},
-				itemStyle: {
-					normal: {
-						color: '#1DB7E5',
-						label: {
-							show: false,
-							color: '#1DB7E5',
-							textStyle: {
-								fontWeight: 'bolder',
-								fontSize: '12',
-								fontFamily: '微软雅黑',
-								color: '#0000ac',
-							},
-						},
-					},
-				},
-				label: {
-					normal: {
-						show: false,
-						position: 'outside',
-						color: '#1DB7E5'
-					},
-				},
+					color: '#ccc'
+				}
 			},
-			//					{
-			//					    name:'饼图',
-			//					    type:'pie',
-			//						radius: ["0%", "30%"],
-			//						center: ["45%", "35%"], 
-			//						label:{
-			//							fontSize:22
-			//						},
-			//						'data':[
-			//						    {
-			//								'value':Cure[i], 
-			//								// 'name':'治愈:\n'+Cure[i]+'('+(Cure[i]/Total[i]*100).toFixed(2)+')%',
-			//								'name':(Cure[i]/Total[i]*100).toFixed(2)+'%',
-			//								'itemStyle': { 'color': '#69c79b',},
-			//							},
-			//						    {
-			//								'value':QWandPT[i], 
-			//								// 'name':'轻型和普通型:\n'+QWandPT[i]+'('+(QWandPT[i]/Total[i]*100).toFixed(2)+')%',
-			//								// 'name':(QWandPT[i]/Total[i]*100).toFixed(2)+'%',
-			//								'itemStyle': { 'color': '#f5d08e' },
-			//								label: {
-			//											normal: {
-			//											  position: 'inner',  // 设置标签位置，默认在饼状图外 可选值：'outer' ¦ 'inner（饼状图上）'
-			//											  // formatter: '{a} {b} : {c}个 ({d}%)'   设置标签显示内容 ，默认显示{b}
-			//											  // {a}指series.name  {b}指series.data的name
-			//											  // {c}指series.data的value  {d}%指这一部分占总数的百分比
-			//											  formatter: '{d}%'
-			//											},
-			//										},
-			//							},
-			//							{
-			//								'value':ZZ[i], 
-			//								// 'name':'重型:\n'+ZZ[i]+'('+(ZZ[i]/Total[i]*100).toFixed(2)+')%',
-			//								'name':(ZZ[i]/Total[i]*100).toFixed(2)+'%',
-			//								'itemStyle': { 'color': '#e87272' },
-			//							},
-			//							{
-			//								'value':WZZ[i], 
-			//								// 'name':'危重型:\n'+WZZ[i]+'('+(WZZ[i]/Total[i]*100).toFixed(2)+')%',
-			//								'name':(WZZ[i]/Total[i]*100).toFixed(2)+'%',
-			//								'itemStyle': { 'color': '#ff0000' },
-			//							},
-			//							{
-			//								'value':Death[i], 
-			//								// 'name':'死亡:\n'+Death[i]+'('+(Death[i]/Total[i]*100).toFixed(2)+')%',
-			//								'name':(Death[i]/Total[i]*100).toFixed(2)+'%',
-			//								'itemStyle': { 'color': '#A52A2A' },
-			//								
-			//							},
-			//						]
-			//					},
-		],
-		tooltip: {}
+			splitLine: {
+				show: false
+			},
+			axisLabel: {
+				formatter: '{value} '
+			}
+		},
+		visualMap: [{
+			show: false,
+			dimension: 3,
+			categories: double_bar.city,
+			calculable: true,
+			precision: 0.1,
+			textGap: 30,
+			textStyle: {
+				color: '#ccc'
+			},
+			inRange: {
+				color: (function() {
+					var colors = ['#FF9900','#FFFF66',  '#43bafe', '#FF6600', '#FFFF00', '#7b7c68', '#e5b5b5', '#f0b489', '#928ea8', '#bda29a'];
+					return colors.concat(colors);
+				})()
+			}
+		}],
+		series: [{
+			type: 'scatter',
+			itemStyle: {
+				opacity: 0.8,
+				shadowBlur: 10,
+				shadowOffsetX: 0,
+				shadowOffsetY: 0,
+				shadowColor: 'rgba(0, 0, 0, 0.5)'
+			},
+			label: {
+				normal: {
+					show: true,
+					textStyle: {
+						color: '#11264f',
+						fontSize: 10,
+						textBorderColor: '#fff',
+						textBorderWidth: 1
+					},
+					formatter: function(val) {
+//						console.log(val.value)
+						return val.value[3];
+					}
+				},
+				emphasis: {
+					show: true,
+					textStyle: {
+						color: '#fff',
+						fontSize: 10,
+						textBorderColor: '#f69f36',
+						textBorderWidth: 1
+					},
+					formatter: function(val) {
+//						console.log(val.value)
+						return val.value[3];
+					}
+				}
+			},
+			data: double_bar.series[i],
+			symbolSize: function(val) {
+				if(val[2] == 0) {
+					return 20;
+				} else if(val[2] == 1) {
+					return 30;
+				} else if(val[2] == 2) {
+					return 40;
+				} else {
+					return 50;
+				}
+			}
+		}]
 
 	};
-
 	myChart1_3.setOption(option1_3);
+	
+	
 
 	var option1_6 = {
 		baseOption: {
@@ -807,38 +732,11 @@ $.get('data/chart1/河南timeline_bar.json', function(result) {
 		//	    option1_3.series[4].data = Cures[obj];
 		//	    option1_3.series[5].data = Totals[obj];
 
-		option1_3 = {
-			xAxis: {
-				data: xAxisDatas[obj]
-			},
-			series: [{
-					name: '死亡',
-					'data': Deaths[obj]
-				},
-				{
-					name: '危重型',
-					'data': WZZs[obj]
-				},
-				{
-					name: '重型',
-					'data': ZZs[obj]
-				},
-				{
-					name: '轻型和普通型',
-					'data': QWandPTs[obj]
-				},
-				{
-					name: '治愈',
-					'data': Cures[obj]
-				},
-				{
-					name: '确诊',
-					'data': Totals[obj]
-
-				}
-			]
-		}
-
+		//更改气泡图
+		option1_3.title[0] = {
+			text: datas.timeline[obj]
+		};
+		option1_3.series[0].data = double_bar.series[obj];
 		myChart1_3.setOption(option1_3);
 	});
 
